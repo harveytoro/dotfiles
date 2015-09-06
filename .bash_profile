@@ -40,8 +40,8 @@ vim $1;
 mkdropboxdir(){
 
 ### Get home path
-mkdir /Users/$(logname)/Dropbox/$1;
-ln -s /Users/$(logname)/Dropbox/$1 /Users/$(logname)/Documents/$1;
+mkdir "/Users/$(logname)/Dropbox/$1";
+ln -s "/Users/$(logname)/Dropbox/$1" "/Users/$(logname)/Documents/$1";
 
 }
 

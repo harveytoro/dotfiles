@@ -82,3 +82,10 @@ curl -u "$(logname)" https://api.github.com/user/repos -d  '{"name":'\""$1"\"',"
 
 }
 
+# Process groff man page
+manpageview(){
+
+groff -Tascii -man $1;
+
+}
+
